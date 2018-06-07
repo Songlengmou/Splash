@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9A32CD"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shimmer_tv"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo_anningtexdiamond_20180112" />
+
+    <com.example.administrator.test.ShimmerTextView
+        android:id="@+id/shimmer_tv"
+        style="@style/MyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/shimmer"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/splash_yjk"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</RelativeLayout>
